@@ -20,11 +20,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* font-size: calc(10px + 2vmin); */
+  
+} */
 
-.App-link {
+ .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +35,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Main container */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  height: 100%;
+  margin-top: 75px;
+}
+
+/* Individual movie card */
+.movie-card {
+  background-color: grey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.movie-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Movie title */
+.movie-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Movie release date */
+.movie-release-date {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Movie opening crawl */
+.movie-opening-crawl {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  height: 4em;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+/* More info link */
+.movie-more-info {
+  color: yellow;
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-right: 20rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.movie-more-info:hover {
+  color: #111;
 }
